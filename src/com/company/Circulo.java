@@ -9,6 +9,27 @@ public class Circulo {
         color = "Rojo";
     }
 
+    public  Circulo(float radio, String  color){
+        this.radio = radio;
+        this.color = color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setRadio(float radio) {
+        this.radio = radio;
+    }
+
+    public float getRadio() {
+        return radio;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
     public float calcularArea(){
         return (float)3.14*(radio*radio);
     }
@@ -17,5 +38,13 @@ public class Circulo {
         System.out.println("Color: "+ color);
         System.out.println("Radio: "+ radio);
         System.out.println("Area: "+ calcularArea());
+    }
+
+    @Override
+    public String toString() {
+        return "Circulo{" +
+                "radio=" + radio +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
