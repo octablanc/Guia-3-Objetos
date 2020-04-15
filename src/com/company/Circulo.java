@@ -40,7 +40,7 @@ public class Circulo {
         System.out.println("Area: "+ calcularArea());
     }
 
-    @Override
+
     public String toString() {
         return "Circulo{" +
                 "radio=" + radio +

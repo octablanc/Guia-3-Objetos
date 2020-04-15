@@ -40,7 +40,7 @@ public class Cilindro extends Circulo {
         System.out.println("------------------------------------------------\n");
     }
 
-    @Override
+
     public String toString() {
         return "Cilindro: subclase de "+ super.toString() + " + altura={"+altura+"}";
     }
